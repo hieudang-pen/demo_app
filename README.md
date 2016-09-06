@@ -28,3 +28,4 @@ insert #2
 insert #3
 insert #4
 insert #5
+config jenkins send mail by smtp.gmail.com
