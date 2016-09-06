@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+#Jenkins Integrations
+this will be automatically build in jenkins server
