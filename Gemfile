@@ -34,6 +34,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rubocop', '~> 0.42.0', require: false
+  gem 'capistrano-rails', '~> 1.1'
 end
 
 group :development do
