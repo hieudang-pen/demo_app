@@ -1,7 +1,7 @@
 # set path to application
 # app_dir = File.expand_path("../..", __FILE__)
 app_dir = '/var/www/demo_app/current'
-shared_dir = "#{app_dir}/../shared"
+shared_dir = "/var/www/demo_app/shared"
 working_directory app_dir
 
 

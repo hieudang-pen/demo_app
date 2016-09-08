@@ -60,6 +60,7 @@
 #     # password: 'please use keys'
 #   }
 
+set :branch, :staging
 set :rails_env, :staging
 server '54.244.209.203', user: 'ubuntu', role: %w{app web}, ssh_options: {
   keys: %w(/Users/hieu/.ssh/pems/jenkins-pentalog.pem),
