@@ -61,6 +61,8 @@ require 'dotenv'
 #     # password: 'please use keys'
 #   }
 
+set :branch, :staging
+set :rails_env, :staging
 server '54.244.209.203', user: 'ubuntu', role: %w{app web}, ssh_options: {
   keys: "#{ENV['HOME']}/.ssh/pems/jenkins-pentalog.pem",
   auth_methods: %w(publickey),
