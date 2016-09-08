@@ -42,10 +42,11 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/syst
 # Default value for keep_releases is 5
 set :keep_releases, 3
 
-after 'deploy:publishing', 'deploy:restart'
+after 'deploy:cleanup', 'deploy:restart'
 
 namespace :deploy do
   task :restart do
-    invoke 'unicorn:reload'
+    info 'demo'
+    invoke 'unicorn:legacy_restart'
   end
 end
