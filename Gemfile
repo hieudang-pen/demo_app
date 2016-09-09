@@ -38,7 +38,7 @@ group :development, :test do
   gem 'capistrano-rails', '~> 1.1'
   gem 'capistrano-bundler', '~> 1.1.2'
   gem 'capistrano-rbenv', '~> 2.0'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano-passenger'
 end
 
 group :development do
@@ -52,3 +52,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'dotenv'

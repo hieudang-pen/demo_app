@@ -1,3 +1,4 @@
+require 'dotenv'
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -63,7 +64,7 @@
 set :branch, :staging
 set :rails_env, :staging
 server '54.244.209.203', user: 'ubuntu', role: %w{app web}, ssh_options: {
-  keys: %w(/Users/hieu/.ssh/pems/jenkins-pentalog.pem),
+  keys: "#{ENV['HOME']}/.ssh/pems/jenkins-pentalog.pem",
   auth_methods: %w(publickey),
   forward_agent: true
 }
