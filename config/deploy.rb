@@ -44,9 +44,8 @@ set :keep_releases, 3
 
 # after 'deploy:publishing', 'deploy:restart'
 
-namespace :deploy do
-  task :restart do
-    info 'demo'
-    invoke 'unicorn:legacy_restart'
-  end
-end
+#namespace :deploy do
+#  task :restart do
+#    invoke 'unicorn:legacy_restart'
+#  end
+#end
